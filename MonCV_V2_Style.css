@@ -235,8 +235,65 @@ section h2
 	text-decoration: underline;
 }
 
-/* RESPONSIVE SMARTPHONE */
-@media screen and (min-width: 480px)
+/* RESPONSIVE SMARTPHONE
+@media screen and (max-width: 480px) */
+@media screen and (max-width: 900px)
 {
+	body
+	{
+		width: 100%;
+	}
+
+	/* BANNER */
+	header
+	{
+		flex-direction: column;
+	}
+
+	#photo
+	{
+		width: 100%;
+	}
+
+	#photo img
+	{
+		margin-left: 33%;
+	}
+
+	#quid
+	{
+		width: 100%;
+	}
+
+	/* LEFT SIDE */
+	aside
+	{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+
+	/* RIGHT SIDE */
+	section
+	{
+		width: 50%;
+		height: 100%;
+		float: right;
+	}
+
+	.board
+	{
+		flex-direction: column;
+	}
+
+	.boardright, .boardleft
+	{
+		width: 100%;
+	}
+
+	.recoLeft, .recoRight
+	{
+		width: 100%;
+	}
 
 }

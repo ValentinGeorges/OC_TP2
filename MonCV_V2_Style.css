@@ -237,17 +237,20 @@ section h2
 
 /* RESPONSIVE SMARTPHONE */
 @media screen and (max-width: 480px)
-/* @media screen and (max-width: 900px) */
+/* @media screen and (max-width: 900px) for test purposes */
 {
 	body
 	{
 		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 
 	/* BANNER */
 	header
 	{
 		flex-direction: column;
+		order: 1;
 	}
 
 	#photo
@@ -265,20 +268,13 @@ section h2
 		width: 100%;
 	}
 
-	/* LEFT SIDE */
-	aside
-	{
-		width: 50%;
-		height: 100%;
-		float: left;
-	}
-
-	/* RIGHT SIDE */
+	/* MIDDLE */
 	section
 	{
-		width: 50%;
-		height: 100%;
-		float: right;
+		width: 100%;
+		min-height: 100%;
+		order: 2;
+		flex-direction: column;
 	}
 
 	.board
@@ -294,6 +290,34 @@ section h2
 	.recoLeft, .recoRight
 	{
 		width: 100%;
+	}
+
+	/* END */
+	aside
+	{
+		width: 100%;
+		height: 1100px;
+		order: 3;
+	}
+
+	#contact
+	{
+		height: 30%;
+	}
+
+	#infos
+	{
+		height: 50%;
+	}
+
+	#loisirs
+	{
+		height: 20%;
+	}
+
+	#loisirs i
+	{
+		margin-left: 14%;
 	}
 
 }
